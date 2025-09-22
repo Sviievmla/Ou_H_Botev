@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <title>ОУ "Христо Ботев" – с. Златар</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<header>
+    <h1>ОУ "Христо Ботев" – с. Златар</h1>
+    <nav>
+        <a href="{{ url_for('index') }}">Начало</a>
+        <a href="{{ url_for('about') }}">За училището</a>
+        <a href="{{ url_for('teachers') }}">Учители</a>
+        <a href="{{ url_for('news') }}">Новини</a>
+        <a href="{{ url_for('gallery') }}">Галерия</a>
+        <a href="{{ url_for('projects') }}">Проекти</a>
+        <a href="{{ url_for('documents') }}">Документи</a>
+    </nav>
+</header>
+<main>{% block content %}{% endblock %}</main>
+<footer><p>&copy; 2025 ОУ "Христо Ботев"</p></footer>
+</body>
+</html>
